@@ -1,16 +1,85 @@
-# React + Vite
+📌 Project Overview:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React-based portfolio management dashboard built as part of the frontend technical assignment.
+It demonstrates the ability to build a data-driven UI, replicate a given design, and present financial statistics clearly using charts and tables.
 
-Currently, two official plugins are available:
+The application consists of two main pages:
+1) Home Page – Displays a collection of blogs.
+2) Portfolio Page – Displays portfolio statistics such as:
+   Month-on-month trading returns for each year
+   Equity curve chart
+   Drawdown chart
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+All statistics are generated using the provided Excel data source and visualized using charts and structured components.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🧰 Tech Stack:
 
-## Expanding the ESLint configuration
+React (Vite)
+JavaScript
+Chart Library (Recharts)
+CSS (for UI replication)
+Excel parsing (xlsx)
+React Router (for multi-page navigation)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📁 Project Structure:
+
+portfolio-management/
+│
+├── public/
+│   └── data.xlsx                # Excel data source
+│
+├── src/
+│   ├── assets/                   # Static assets
+│   │
+│   ├── components/
+│   │   ├── DrawdownChart.jsx
+│   │   ├── EquityCurveChart.jsx
+│   │   └── ReturnsTable.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   └── Portfolio.jsx
+│   │
+│   ├── utils/
+│   │   └── excel.js              # Excel parsing & data transformation
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── App.css
+│   └── index.css
+│
+├── index.html
+├── vite.config.js
+├── package.json
+└── README.md
+
+📊 Data Source:
+
+The project uses public/data.xlsx as the data source
+Data is parsed in src/utils/excel.js
+Calculated metrics include:
+-> Monthly returns
+-> Yearly aggregation
+-> Equity curve
+-> Drawdown values
+
+🚀 How to Run the Project Locally:
+
+1. Clone the repository
+   git clone <your-repository-url>
+   cd portfolio-management
+2. Install dependencies
+   npm install
+3. Start the development server
+   npm run dev
+The application will be available at:
+👉 http://localhost:5173
+
+
+👨‍💻 Author
+
+AbdulKarim Mandaviya
+Software Engineeer (Frontend)
+📧 abdulmandaviya@gmail.com
+📱 +91 72020253570
