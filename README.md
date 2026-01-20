@@ -66,12 +66,12 @@ Calculated metrics include:
 
 🚀 How to Run the Project Locally:
 
-1. Clone the repository
+1. Clone the repository:
    git clone <your-repository-url>
    cd portfolio-management
-2. Install dependencies
+2. Install dependencies:
    npm install
-3. Start the development server
+3. Start the development server:
    npm run dev
 The application will be available at:
 👉 http://localhost:5173
